@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void disparar(View view) {
-        EditText text = (EditText) findViewById(R.id. time);
+        EditText text = (EditText) findViewById(R.id.etTempo);
         int i = Integer.parseInt(text.getText().toString());
         Intent intent = new Intent(this, AlarmeReceiver. class);
 
