@@ -19,4 +19,15 @@
         android:layout_height="wrap_content"
         android:text="Iniciar"
         android:onClick="disparar"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logar"
+        android:onClick="iniciar"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Parar"
+        android:onClick="parar"/>
+
 </LinearLayout>

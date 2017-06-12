@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,5 +30,12 @@ public class MainActivity extends AppCompatActivity {
                 System. currentTimeMillis() + (i * 1000),
                 pendingIntent);
         Toast.makeText(this, "Alarm set in " +i+ " seconds",Toast.LENGTH_LONG).show();
+    }
+    public void iniciar(View view){
+        intent = new Intent(this,Logger.class);
+        startService(intent);
+    }
+    public void parar(View view){
+        stopService(intent);
     }
 }

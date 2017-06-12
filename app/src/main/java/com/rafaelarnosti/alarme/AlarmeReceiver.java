@@ -19,7 +19,7 @@ public class AlarmeReceiver extends BroadcastReceiver {
     }
     @Override
     public void onReceive(Context context, Intent intent) {
-        mp= MediaPlayer.create(context, R.raw.para);
+        mp= MediaPlayer.create(context, R.raw.metalgearsolid);
         mp.start();
         Toast.makeText(context, "Alarm....", Toast.LENGTH_LONG).show();
     }
